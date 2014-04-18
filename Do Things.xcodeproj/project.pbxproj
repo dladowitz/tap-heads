@@ -19,6 +19,10 @@
 		AC91A7B919004E0700311547 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC91A7A119004E0700311547 /* UIKit.framework */; };
 		AC91A7C119004E0700311547 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC91A7BF19004E0700311547 /* InfoPlist.strings */; };
 		AC91A7C319004E0700311547 /* Do_ThingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC91A7C219004E0700311547 /* Do_ThingsTests.m */; };
+		AC91A7D019004F8C00311547 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC91A7CE19004F8C00311547 /* MapViewController.m */; };
+		AC91A7D119004F8C00311547 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC91A7CF19004F8C00311547 /* MapViewController.xib */; };
+		AC91A7DF1900551900311547 /* MotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC91A7DD1900551900311547 /* MotionViewController.m */; };
+		AC91A7E01900551900311547 /* MotionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC91A7DE1900551900311547 /* MotionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,12 @@
 		AC91A7BE19004E0700311547 /* Do ThingsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Do ThingsTests-Info.plist"; sourceTree = "<group>"; };
 		AC91A7C019004E0700311547 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AC91A7C219004E0700311547 /* Do_ThingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Do_ThingsTests.m; sourceTree = "<group>"; };
+		AC91A7CD19004F8C00311547 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		AC91A7CE19004F8C00311547 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		AC91A7CF19004F8C00311547 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		AC91A7DC1900551900311547 /* MotionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionViewController.h; sourceTree = "<group>"; };
+		AC91A7DD1900551900311547 /* MotionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionViewController.m; sourceTree = "<group>"; };
+		AC91A7DE1900551900311547 /* MotionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MotionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +117,7 @@
 		AC91A7A319004E0700311547 /* Do Things */ = {
 			isa = PBXGroup;
 			children = (
+				AC91A7CC19004EC200311547 /* View Controllers */,
 				AC91A7AC19004E0700311547 /* AppDelegate.h */,
 				AC91A7AD19004E0700311547 /* AppDelegate.m */,
 				AC91A7AF19004E0700311547 /* Images.xcassets */,
@@ -142,6 +153,19 @@
 				AC91A7BF19004E0700311547 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC91A7CC19004EC200311547 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC91A7CD19004F8C00311547 /* MapViewController.h */,
+				AC91A7CE19004F8C00311547 /* MapViewController.m */,
+				AC91A7CF19004F8C00311547 /* MapViewController.xib */,
+				AC91A7DC1900551900311547 /* MotionViewController.h */,
+				AC91A7DD1900551900311547 /* MotionViewController.m */,
+				AC91A7DE1900551900311547 /* MotionViewController.xib */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +244,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC91A7A819004E0700311547 /* InfoPlist.strings in Resources */,
+				AC91A7D119004F8C00311547 /* MapViewController.xib in Resources */,
+				AC91A7E01900551900311547 /* MotionViewController.xib in Resources */,
 				AC91A7B019004E0700311547 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC91A7D019004F8C00311547 /* MapViewController.m in Sources */,
 				AC91A7AE19004E0700311547 /* AppDelegate.m in Sources */,
+				AC91A7DF1900551900311547 /* MotionViewController.m in Sources */,
 				AC91A7AA19004E0700311547 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +465,7 @@
 				AC91A7C819004E0700311547 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC91A7C919004E0700311547 /* Build configuration list for PBXNativeTarget "Do ThingsTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +474,7 @@
 				AC91A7CB19004E0700311547 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,14 +7,38 @@
 //
 
 #import "AppDelegate.h"
+#import "MapViewController.h"
+#import "MotionViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+
+    
+    // Initialize View Controllers
+    MapViewController *mapViewController           = [[MapViewController alloc] init];
+    MotionViewController *motionViewController     = [[MotionViewController alloc] init];
+    
+    // Create Naviation Controllers with View Controllers
+    UINavigationController *mapNavigationController         = [[UINavigationController alloc] initWithRootViewController:mapViewController];
+    UINavigationController *motionNavigationController    = [[UINavigationController alloc] initWithRootViewController:motionViewController];
+    
+    // Create Tab Bar Controller and Add Navigation Controller
+//    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+//    tabBarController.viewControllers = @[mapNavigationController, motionNavigationController];
+    
+    // Configure Tab Bar Controller Buttons
+//    mapNavigationController.tabBarItem.title      = @"Maps";
+//    motionNavigationController.tabBarItem.title = @"Motion";
+    
+    // Set the Root View Controller
+
+    self.window.rootViewController  = mapNavigationController;
+    
+    self.window.backgroundColor = [UIColor yellowColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
