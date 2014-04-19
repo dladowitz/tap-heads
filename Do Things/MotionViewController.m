@@ -7,6 +7,8 @@
 //
 
 #import "MotionViewController.h"
+#import "PongViewController.h"
+#import "MapViewController.h"
 
 @interface MotionViewController ()
 
@@ -26,7 +28,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    // Setting Nav Buttons
+    UIBarButtonItem *rightButton =[[UIBarButtonItem alloc] initWithTitle:@"Inder Roll"
+                                                                   style:UIBarButtonItemStylePlain
+                                                                  target:self
+                                                                  action:@selector(onInderButton)];
+    self.navigationItem.rightBarButtonItem = rightButton;
     
     // Min and Max Values
     CGFloat leftRightMin = -200.0f;
@@ -56,11 +64,12 @@
     
     NSLog(@"center: %@", NSStringFromCGPoint(self.wesHead.center));
     NSLog(@"frame: %@", NSStringFromCGRect(self.wesHead.frame));
-    
-    
-    
 }
 
+- (void)onInderButton {
+    MapViewController *mapViewController = [[MapViewController alloc] init];
+    [self.navigationController pushViewController:mapViewController animated:YES];
+}
 
 - (void)didReceiveMemoryWarning
 {

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>610552ED-01E0-4FC7-9F9C-1DCB412FD685</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Do Things</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9D8D0F3E-07C9-4FB8-9BEC-30791168014E</key>
+		<string>ssh://github.com/dladowitz/tap-heads.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Do Things.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9D8D0F3E-07C9-4FB8-9BEC-30791168014E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/dladowitz/tap-heads.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9D8D0F3E-07C9-4FB8-9BEC-30791168014E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9D8D0F3E-07C9-4FB8-9BEC-30791168014E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Do Things</string>
+		</dict>
+	</array>
+</dict>
+</plist>

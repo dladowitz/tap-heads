@@ -8,6 +8,7 @@
 
 #import "MapViewController.h"
 #import "MotionViewController.h"
+#import "PongViewController.h"
 
 @interface MapViewController ()
 
@@ -35,13 +36,16 @@ UICollisionBehavior* _collision;
     [super viewDidLoad];
 
     // Setting Nav Buttons
-    UIBarButtonItem *rightButton =[[UIBarButtonItem alloc] initWithTitle:@"UIMotion" style:UIBarButtonItemStylePlain target:self action:@selector(onMotionButton)];
+    UIBarButtonItem *rightButton =[[UIBarButtonItem alloc] initWithTitle:@"Jon Pong"
+                                                                   style:UIBarButtonItemStylePlain
+                                                                  target:self
+                                                                  action:@selector(onJonButton)];
     self.navigationItem.rightBarButtonItem = rightButton;
     
     
     // UIImage View
     UIImageView *headImage = [[UIImageView alloc] initWithFrame:CGRectMake(100, 10, 100, 100)];
-    [headImage setImage:[UIImage imageNamed:@"JonHead"]];
+    [headImage setImage:[UIImage imageNamed:@"InderHead"]];
     
     // UIViews
 //    UIView *square  = [[UIView alloc] initWithFrame:CGRectMake(100, 0, 100, 110)];
@@ -85,10 +89,9 @@ UICollisionBehavior* _collision;
     [_animator addBehavior:itemBehaviour];
 }
 
-- (void)onMotionButton {
-    MotionViewController *motionViewController = [[MotionViewController alloc] init];
-    [self.navigationController pushViewController:motionViewController animated:YES];
-    
+- (void)onJonButton {
+    PongViewController *pongViewController = [[PongViewController alloc] init];
+    [self.navigationController pushViewController:pongViewController animated:YES];
 }
 
 
